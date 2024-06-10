@@ -34,6 +34,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        freeCompilerArgs += ["-Xjsr305=ignore", "-nowarn"]
     }
     buildFeatures {
         compose = true
